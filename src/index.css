@@ -13,7 +13,7 @@ code {
 }
 
 
-#api-version {
+#api-version #stack-label {
   font-size: 14pt;
   color: #000000;
 }
@@ -21,4 +21,9 @@ code {
 #api-version::before{
   content: 'API Version: ';
   color: #a02020;
+}
+
+#stack-label::before {
+  content: "Branch: ";
+  color: #20a020;
 }
