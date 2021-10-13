@@ -3,6 +3,9 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const apiVersionStr = screen.getByText(/--/i);
-  expect(apiVersionStr).toBeInTheDocument();
+
+  setTimeout(() => {
+    const apiVersionStr = screen.getByText(/\d+\.\d+\.\d+/i);
+    expect(apiVersionStr).toBeInTheDocument();
+  })
 });
