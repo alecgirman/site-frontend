@@ -7,5 +7,5 @@ test('renders learn react link', () => {
   setTimeout(() => {
     const apiVersionStr = screen.getByText(/\d+\.\d+\.\d+/i);
     expect(apiVersionStr).toBeInTheDocument();
-  })
+  }, 2000)
 });
