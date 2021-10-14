@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <WelcomeLabel />
-      <AnimateButton />
       <VersionLabel />
     </div>
   )
@@ -17,16 +16,6 @@ function App() {
 
 function WelcomeLabel() {
   return <h1 id='welcome'>Welcome!</h1>
-}
-
-function AnimateButton() {
-  return <button onClick={() => {
-    anime({
-      targets: '#welcome',
-      translateX: 240,
-      color: '#c0b0a0',
-    })
-  }}>Animate</button>
 }
 
 const FooterBar = styled.div`
@@ -43,7 +32,6 @@ const GithubRepo = (props) => {
 
   return (
     <a href={targetUrl}>
-      {/* <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/sampleicons.svg" /> */}
       <img class='github-logo-svg' height="32" width="32" src="https://simpleicons.org/icons/github.svg" />
     </a>
   )
